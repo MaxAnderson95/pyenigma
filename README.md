@@ -22,7 +22,8 @@ The Enigma machine operates in a deterministic manner, meaning that with identic
 
 * Clone this repo to your local machine
 * Navigate to the root of the repo on your local machine
-* Run `pip install .`
+* Run `uv sync` (or `pip install .` if you don't have uv)
+* To install the CLI system-wide, run `uv tool install .`
 
 ## Using the CLI
 

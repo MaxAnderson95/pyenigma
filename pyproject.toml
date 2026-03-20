@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyenigma"
+dynamic = ["version"]
+description = "A Python implementation of the Enigma I machine"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+
+[project.scripts]
+pyenigma = "pyenigma.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "mypy>=1.0",
+    "coverage>=7.0",
+]
+
+[tool.hatch.version]
+path = "pyenigma/__init__.py"
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["pyenigma"]
