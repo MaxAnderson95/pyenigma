@@ -1,5 +1,4 @@
 import logging
-from math import e
 from pyenigma.constants import ALPHABET, ROTOR_WIRING, ROTOR_NOTCHES
 from pyenigma.exceptions import (
     RotorWiringWrongLengthException,

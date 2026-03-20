@@ -50,7 +50,7 @@ class EnigmaMachine():
 
     @staticmethod
     def _next_letter(letter: str) -> str:
-        letter.upper()
+        letter = letter.upper()
         if letter == 'Z':
             return 'A'
         else:

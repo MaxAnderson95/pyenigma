@@ -1,5 +1,4 @@
 import logging
-import re
 from pyenigma.constants import ALPHABET, REFLECTOR_WIRING
 from pyenigma.exceptions import (
     ReflectorWiringWrongLengthException,
